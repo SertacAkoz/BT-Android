@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     BluetoothSocket mmSocket;
     OutputStream mmOutputStream;
     InputStream mmInputStream;
-    boolean stopWorker;
+   // boolean stopWorker;
 
     //Buttons
     RelativeLayout btnOpenBluetooth;
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
     }
     void closeBT() throws IOException {
         try {
-            stopWorker = true;
+           // stopWorker = true;
             mmOutputStream.close();
             //mmInputStream.close();
             mmSocket.close();
