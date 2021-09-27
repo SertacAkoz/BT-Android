@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="@color/bgColor">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout">
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="open bluetooth"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@drawable/custombutton"-->
+<!--            android:id="@+id/btnOpenBluetooth"/>-->
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custombutton"
+            android:id="@+id/btnOpenBluetooth">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="Open Bluetooth"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custombutton"
+            android:id="@+id/btnCloseBluetooth">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="Close Bluetooth"/>
+        </RelativeLayout>
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="close bluetooth"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@color/black"-->
+<!--            android:id="@+id/btnCloseBluetooth"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:background="@drawable/container"
+        android:id="@+id/container"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/btnOpenBluetooth"
+            android:id="@+id/edtTextValfGecisSuresi"
+            android:layout_centerHorizontal="true"
+            android:hint="Lütfen valf geçiş süresini giriniz" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTextValfGecisSuresi"
+            android:hint="Lütfen referans basınç değerini giriniz"
+            android:id="@+id/edtTextReferansBsinc"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/edtTextReferansBasinc"
+            android:id="@+id/edtTextValfCalismaSuresi"
+            android:hint="Lütfen bir valfin çalışma süresini giriniz"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTextBeklemeSuresi"
+            android:layout_below="@+id/edtTextValfCalismaSuresi"
+            android:textAlignment="center"
+            android:hint="Lütfen bekleme süresini giriniz"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="send data"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/container"
+        android:background="@drawable/custombutton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSendData">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Data"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>
